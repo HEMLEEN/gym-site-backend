@@ -22,16 +22,12 @@ const outgoingMails = async (mailContents) => {
         html: mailContents.message,
         replyTo: mailContents.replyTo
     };
-    console.log('passs-------',mailOptions)
     
     let mailStatus = await transporter.sendMail(mailOptions);
 
     if(mailStatus && mailStatus.messageId !== undefined){
-        console.log('passs')
         return true;
     }else{
-        console.log('fail')
-
         return false;
     }
 
