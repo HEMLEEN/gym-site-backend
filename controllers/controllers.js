@@ -1,6 +1,7 @@
 const asyncHandler = require("express-async-handler");
 const Users = require("../models//user.model");
 const { eventTemplate } = require("../helpers/emailhelpers");
+const {sendToCustomer } = require("../helpers/emailTemplates/customer.template");
 
 
 // ******>Read<*****
@@ -21,6 +22,7 @@ const createUser = asyncHandler(async (req, res) => {
       
       if (newUser) {
         await eventTemplate(savedUser);
+        await sendToCustomer(savedUser)
         res.status(200).json({ message: "User created", savedUser });
       }else{
         console.log('errrr');
