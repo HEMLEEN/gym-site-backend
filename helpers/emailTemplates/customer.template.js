@@ -27,9 +27,7 @@ const customerDetails = asyncHandler(async (eventData) => {
 		</head>
 		
 		<body>
-		<p>
-                     Dear, ${name}</p>
-                       <p> Thank you for choosing our gym!</P
+						<p>Customer Name, ${name}</p>
                         <p>Customer Email: ${email}</p>
                         <p>Contact Number: ${contact}</p>
 						<p> Message and Feedback: ${message}</p>
