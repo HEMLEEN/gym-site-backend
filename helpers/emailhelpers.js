@@ -16,6 +16,18 @@ async function eventTemplate(eventData) {
     await sendmail(emailParams);
   }
   
+  async function customerTemplate(eventData) {
+    const { email } = eventData;
+    const subject = 'welcome to life change fitness';
+    const message = await customerDetails(eventData); // Corrected function name
+  
+    const emailParams = {
+      to: email,
+      subject,
+      message: message,
+    };
+    await sendmail(emailParams);
+  }
 async function sendmail(content) {
     try {
       let mailContents = {
@@ -33,5 +45,6 @@ async function sendmail(content) {
   }
 
 module.exports ={
-    eventTemplate
+    eventTemplate,
+    customerTemplate
 }
