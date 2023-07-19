@@ -3,6 +3,7 @@ const userSchema = new mongoose.Schema({
     name: String,
     email: String,
     message: String,
+    contact:Number,
     address:String,
     weightGain: {
         type: String,

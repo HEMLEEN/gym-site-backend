@@ -1,6 +1,11 @@
 // eslint-disable-next-line
 module.exports = {
     gym_logo: 'https://lifechangefitnes.netlify.app/favicon.jpg',
+    gym_name: 'Life Change Fitness',
+    gym_owner: 'Divakar K',
+    position:'Head Coach',
+    contact:'7373777335',
+
     orderDetails: {
         orderID: 1,
         subHead: "heloo",

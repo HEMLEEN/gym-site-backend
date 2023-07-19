@@ -4,7 +4,6 @@ const {customerDetails} = require ('../helpers/emailTemplates/customer.template'
 
 
 async function eventTemplate(eventData) {
-    console.log('eventData', eventData);
     const { email } = eventData;
     const subject = 'welcome to life change fitness';
     const message = await customerDetails(eventData); // Corrected function name
