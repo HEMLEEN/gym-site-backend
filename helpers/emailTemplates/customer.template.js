@@ -30,7 +30,7 @@ let commonFooterDiv = await commonFooter()
 			<table style="max-width:600px;width:100%;margin:0 auto;" >
 			<tr >
 				<th class="mobile-view-mail-title" style="text-align:center;width: 100%; box-sizing: border-box ;padding-top: 25px;">
-				<img src="${gym_logo}" alt="gym_logo" style=" margin: 0 auto; display:block;  width: 100%; height: 100%; max-width: 218px;max-height: 52px;" class="img-fluid"/>
+				<img src="${gym_logo}" alt="gym_logo" style=" margin: 0 auto; display:block;  width: 100%; height: 100%; max-width: 100px;max-height: 150px;" class="img-fluid"/>
 				</th>
 			</tr>
 		</table>
