@@ -1,6 +1,7 @@
+const logo = require ('../assets/favicon.jpg');
 // eslint-disable-next-line
 module.exports = {
-    gym_logo: 'LCF',
+    gym_logo: logo,
     orderDetails: {
         orderID: 1,
         subHead: "heloo",
