@@ -1,7 +1,6 @@
-const logo = require ('../assets/favicon.jpg');
 // eslint-disable-next-line
 module.exports = {
-    gym_logo: logo,
+    gym_logo: 'https://lifechangefitnes.netlify.app/favicon.jpg',
     orderDetails: {
         orderID: 1,
         subHead: "heloo",
