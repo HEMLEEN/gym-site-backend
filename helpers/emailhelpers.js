@@ -7,7 +7,7 @@ async function eventTemplate(eventData) {
     const { email } = eventData;
     const subject = 'welcome to life change fitness';
     const message = await customerDetails(eventData); // Corrected function name
-  
+
     const emailParams = {
       to: email,
       subject,
